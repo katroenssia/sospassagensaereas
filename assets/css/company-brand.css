@@ -1,0 +1,42 @@
+.empresas-aereas-parceiras {
+  margin: 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
+  background-image: linear-gradient(
+    to right,
+    rgba(34, 103, 151, 0.87),
+    rgba(41, 112, 142, 0.58)
+  );
+}
+
+.empresas-aereas-parceiras img {
+  height: 40px;
+}
+
+@media (max-width: 800px) {
+  .empresas-aereas-parceiras {
+    margin: 60px 0;
+  }
+
+  .empresas-aereas-parceiras img {
+    width: 33%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .empresas-aereas-parceiras {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .empresas-aereas-parceiras img {
+    margin: 10px 0px;
+    width: auto;
+    object-fit: cover;
+  }
+}

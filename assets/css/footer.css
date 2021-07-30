@@ -1,0 +1,92 @@
+footer {
+  margin-top: 80px;
+  background: var(--backgroundSolidColor);
+  background: var(--blue);
+  width: 100vw;
+}
+
+.footer-grid {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-grid > div {
+  min-width: 260px;
+}
+
+.footer-grid > div:nth-child(4) div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-grid h2 {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+}
+.footer-grid h2::after {
+  content: '';
+  border-radius: 8px;
+  width: 3px;
+  height: 2.2rem;
+  background: var(--blue);
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.footer-grid img {
+  max-width: 100%;
+}
+
+.footer-grid p,
+.footer-grid p a {
+  line-height: 2;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  transition: 0.2s;
+}
+/* .footer-grid p:hover{
+    transform: scale(1.1);
+} */
+
+#copy {
+  background: var(--red);
+  display: grid;
+  place-items: center;
+}
+
+#copy h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 20px 0;
+  color: var(--white);
+}
+#copy h3 a {
+  color: inherit;
+}
+
+@media (max-width: 800px) {
+  .footer-grid {
+    justify-content: center;
+    gap: 32px;
+  }
+  .footer_social_icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .copy h3 {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .copy h3 {
+    padding: 0px 20px;
+  }
+}

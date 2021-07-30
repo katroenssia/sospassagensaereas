@@ -1,0 +1,124 @@
+#destinos {
+  margin: 100px auto;
+}
+
+#destinos h2 {
+  font-size: 4.4rem;
+  color: var(--red);
+  text-shadow: var(--textShadowSection);
+}
+#destinos h2 span {
+  color: var(--blue);
+}
+
+#destinos p {
+  font-size: 2.2rem;
+}
+
+#destinos .destinos-image-area {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+#destinos .destinos-image-area .card {
+  position: relative;
+  overflow: hidden;
+}
+
+#destinos .destinos-image-area .card span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.3rem;
+  background-color: rgba(0%, 0%, 0%, 0.7);
+}
+#destinos .destinos-image-area .card .card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+#destinos .destinos-image-area .card .card-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+#destinos .destinos-image-area .card:nth-child(3) {
+  grid-column: 3/5;
+}
+#destinos .destinos-image-area .card:nth-child(3) .card-image {
+  height: 100%;
+}
+
+#destinos .destinos-image-area .card:nth-child(5) {
+  grid-column: 2/4;
+}
+
+#destinos .destinos-image-area .card:nth-child(5) .card-image {
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  #destinos .destinos-image-area {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(
+        200px,
+        1fr
+      );
+  }
+  #destinos .destinos-image-area .card:nth-child(3) {
+    grid-column: 3;
+  }
+  #destinos .destinos-image-area .card:nth-child(3) .card-image {
+    height: 100%;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) {
+    grid-column: 2;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) .card-image {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #destinos h2 {
+    font-size: var(--textHeaderMobileSize);
+    text-align: center;
+  }
+  #destinos p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #destinos .destinos-image-area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #destinos .destinos-image-area .card:nth-child(3) {
+    grid-column: 3;
+  }
+  #destinos .destinos-image-area .card:nth-child(3) .card-image {
+    height: 320px;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) {
+    grid-column: 2;
+  }
+
+  #destinos .destinos-image-area .card:nth-child(5) .card-image {
+    height: 320px;
+  }
+  #destinos .destinos-image-area .card .card-image {
+    height: 100%;
+  }
+  #destinos .destinos-image-area .card span {
+    bottom: 4px;
+  }
+}

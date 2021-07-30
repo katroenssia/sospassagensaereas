@@ -1,0 +1,77 @@
+{
+  "navbar": {
+    "sobre": "quienes somos",
+    "Passagens": "Entradas",
+    "Unidades": "sucursales",
+    "Pacotes": "Paquete de Viaje",
+    "Contato": "contactos"
+  },
+  "hero": {
+    "h1": "el mejor precio para los<br> <span>billetes de avión</span>",
+    "h2": "Trabajando desde 2016 en los aeropuertos brasileños como apoyo de emergencia a los pasajeros.",
+    "button1": "Solicitud de cotización",
+    "button2": "Whatsapp empresa"
+  },
+
+  "banner": {
+    "banner_h2": "perdí <span>tel vuelo?</span>",
+    "banner_h3": "<span>¡SOS Air Tickets </span>lo resuelve!<br> ¡Tenemos las mejores condiciones para que viajes de urgencia!"
+  },
+
+  "destinos": {
+    "h2_destino": "featured <span>destinations</span>",
+    "p_destino": "We've separated some of the most popular destinations so you can prepare your next trip!",
+    "estados_unidos": "United States",
+    "franca": "France",
+    "japao": "Japan",
+    "portugal": "Portugal",
+    "italia": "Italy",
+    "espanha": "Spain"
+  },
+
+  "servicos": {
+    "h2": "Who <span>Services</span>",
+    "list": {
+      "li0": "Quotation, reservation and issuance of national and international air tickets.",
+      "li1": "Hotel reservation and quotation.",
+      "li2": "Quotation and issuance of road tickets.",
+      "li3": "Travel insurance issuance budget",
+      "li4": "Personalized service according to the customer's needs.",
+      "li5": "24-hour service",
+      "li6": "Quotation, booking and corporate and group issuance.",
+      "li7": "Emergency emissions.",
+      "li8": "Tourist advice."
+    }
+  },
+
+  "depoimentos": {
+    "h1": "Customer <span>Testimonials</span> "
+  },
+
+  "sobre": {
+    "h1": "about <span>the company</span>",
+    "p1": "Tourism company specializing in last minute airline tickets. Working since 2016 in Brazilian airports as emergency support to passengers.",
+    "p2": "We are in the expansion process, currently we are in 18 Brazilian airports. With central in Belém International Airport, open 24 hours a day.",
+    "a": "see all branches"
+  },
+
+  "formulario": {
+    "h2": "quote <span>without obligation</span>",
+    "p": "Fill out the form below, requesting a quote, we will contact you immediately to meet them with the best cost-benefit ratio in the market.",
+    "label": {
+      "name": "Your name",
+      "email": "Your email",
+      "phone": "your phone",
+      "quantity": "amount of people",
+      "origem": "Origin",
+      "destino": "Destiny",
+      "data_viagem": "travel date"
+    },
+    "button": "submit Form"
+  },
+
+  "mapa": {
+    "h2": "or make <span>an visit</span>",
+    "p": "Select the unit closest to you"
+  }
+}

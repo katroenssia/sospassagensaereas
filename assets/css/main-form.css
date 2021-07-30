@@ -1,0 +1,255 @@
+#form {
+  scroll-margin-top: 70px;
+}
+
+#form h2 {
+  font-size: 4.4rem;
+  color: var(--red);
+  text-shadow: var(--textShadowSection);
+}
+
+#form h2 span {
+  color: var(--blue);
+}
+
+#form .para-subtitle {
+  font-size: 2.2rem;
+}
+
+.form-container {
+  width: 100%;
+  padding: 32px 0;
+  margin-top: 20px;
+  background: var(--backgroundSolidColor);
+  border-radius: 8px;
+  box-shadow: var(--boxShadow);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.form-container form {
+  max-width: 630px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-container form label {
+  width: fit-content;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: block;
+}
+
+.form-container form label .para {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.form-container form input,
+button {
+  width: 340px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  padding: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--blue);
+  font-size: 1.6rem;
+}
+
+.form-container form #btn-form {
+  background: rgb(32, 104, 152);
+  color: var(--white);
+  transition: background 0.2s;
+  align-self: flex-end;
+  grid-column: 2;
+}
+
+.form-container form #btn-form:hover {
+  background: rgb(38, 121, 177);
+  transition: background 0.2s;
+}
+
+.form-container form #btn-form-whatsapp {
+  background: #27d682;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  grid-column: 2;
+  height: 40px;
+}
+
+.form-container form #btn-form-whatsapp p {
+  color: white;
+  margin-right: 15px;
+}
+.form-container form button:hover {
+  cursor: pointer;
+  background: rgb(92, 185, 131);
+  color: var(--white);
+}
+
+.form-container form input::placeholder {
+  font-size: 1.6rem;
+  padding: 8px;
+}
+
+.form-container form input:focus {
+  box-shadow: 0 0 0 0;
+  font-size: 1.6rem;
+  outline: 0;
+  padding: 8px;
+}
+
+.form-container img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: -65px;
+}
+
+main .modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+main .modal.active {
+  display: flex;
+}
+
+main .modal .message-card {
+  position: relative;
+  background-color: white;
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+main .modal .message-card h3 {
+  font-size: 2rem;
+  color: rgb(36, 36, 36);
+}
+main .modal .message-card .btn-close-modal {
+  position: absolute;
+  font-size: 2rem;
+  padding: 10px 20px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+main .modal .message-card .body-message {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  height: 100px;
+}
+
+main .modal .message-card .body-message .success-email {
+  height: 80px;
+  padding-right: 10px;
+  border-right: 2px solid rgb(194, 194, 194);
+}
+main .modal .message-card .body-message p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* tag tradutora */
+
+.goog-logo-link,
+.google_translate_element span {
+  display: none;
+}
+
+* .goog-te-gadget {
+  color: white !important;
+}
+
+.goog-te-combo {
+  position: relative;
+  top: 6px;
+  padding: 4px;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+}
+.goog-te-combo > option {
+  display: none;
+}
+option[value='pt'],
+option[value='en'],
+option[value='es'] {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    height: auto;
+  }
+  .form-container form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    overflow-y: initial;
+  }
+
+  .form-container .girl-image-area img {
+    display: none;
+  }
+  .form-container form input,
+  button {
+    width: 100%;
+  }
+  #form h2 {
+    font-size: var(--textHeaderMobileSize);
+    text-align: center;
+  }
+
+  #form .para-subtitle {
+    padding: 10px 0px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #form h2 {
+    font-size: var(--textHeaderMobileSize);
+    text-align: center;
+  }
+
+  #form .para-subtitle {
+    padding: 10px 0px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .form-container form label .para {
+    text-align: left;
+  }
+  .form-container form label {
+    width: 100%;
+  }
+  .form-container form label input {
+    width: 100%;
+  }
+  .form-container form {
+    max-width: none;
+    width: 100%;
+  }
+}

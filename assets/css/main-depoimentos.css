@@ -1,0 +1,106 @@
+#depoimentos {
+  margin: 0 auto;
+  text-shadow: var(--textShadowSection);
+  scroll-margin-top: 70px;
+}
+
+#depoimentos h1 {
+  font-size: 4.4rem;
+  color: var(--red);
+}
+
+#depoimentos h1 span {
+  color: var(--blue);
+}
+
+#depoimentos img {
+  width: 100%;
+}
+
+.wrapper_depositions1, .wrapper_depositions2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 44px 0;
+}
+
+.depositions {
+  flex: 1;
+  min-width: 270px;
+  height: 305px;
+}
+
+.wrapper_depositions1 .depositions:nth-child(1) {
+  background-image: url(../image/depositions/banner_dp0.png);
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper_depositions1 .depositions:nth-child(2) {
+  background-image: url(../image/depositions/banner_dp1.png);
+  background-size: cover;
+}
+
+.wrapper_depositions1 .depositions:nth-child(3) {
+  background-image: url(../image/depositions/banner_dp2.png);
+  background-size: cover;
+}
+
+.wrapper_depositions2 .depositions:nth-child(1) {
+  background-image: url(../image/depositions/banner_dp3.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper_depositions2 .depositions:nth-child(2) {
+  background-image: url(../image/depositions/banner_dp5.jpg);
+  background-size: cover;
+}
+
+.wrapper_depositions2 .depositions:nth-child(3) {
+  background-image: url(../image/depositions/banner_dp4.jpg);
+  background-size: cover;
+}
+
+.depositions_text {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s;
+}
+
+.depositions_text:hover {
+  background: #5c5c5c9a;
+}
+
+.depositions_text h3 {
+  padding: 16px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1000;
+}
+
+.depositions_text:hover h3 {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  #depoimentos h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #depoimentos h1 {
+    font-size: var(--textHeaderMobileSize);
+  }
+}
